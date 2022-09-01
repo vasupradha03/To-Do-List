@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(202, 167, 212);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin: 5% 10%;
+}
+
+#circle1 {
+    width: 40px;
+    height: 40px;
+    background: palevioletred;
+    position: relative;
+    border-radius: 40px;
+    animation: mymove 10s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+#circle2 {
+    width: 40px;
+    height: 40px;
+    background: palevioletred;
+    position: relative;
+    border-radius: 40px;
+    animation: mymove 10s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+#circle3 {
+    width: 40px;
+    height: 40px;
+    background: palevioletred;
+    position: relative;
+    border-radius: 40px;
+    animation: mymove 10s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+@keyframes mymove {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 98%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    border-color: blueviolet;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-left: 10px solid blueviolet;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background-color: antiquewhite;
+    font-size: 20px;
+    transition: 0.4s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover {
+    background-color: palevioletred;
+    color: bisque;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.header {
+    background-color: blueviolet;
+    color: wheat;
+    text-align: center;
+    padding: 30px;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    margin: 0;
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: palevioletred;
+    color: bisque;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: violet;
+}
